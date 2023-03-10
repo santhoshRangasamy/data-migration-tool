@@ -1,0 +1,35 @@
+.chart {
+  flex: 2;
+  display: flex;
+  min-height: min-content;
+  height: 500px;
+  overflow: hidden;
+  overflow-y: scroll;
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  padding: 10px;
+  .tilte {
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .top {
+    display: flex;
+    color: gray;
+    flex-direction: column;
+    .progressbar {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      text-align: center;
+      font-size: 10px;
+      .progress {
+        margin-top: 10px;
+        margin-left: 10px;
+      }
+    }
+    .card {
+      background-color: black;
+      width: 40%;
+    }
+  }
+}

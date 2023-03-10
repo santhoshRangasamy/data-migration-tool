@@ -1,0 +1,84 @@
+{
+  "data": {
+    "converter": null,
+    "_key": {
+      "path": {
+        "segments": ["requests", "tCb3MZzFeRWKqBwCfFpg"],
+        "offset": 0,
+        "len": 2
+      }
+    },
+    "type": "document",
+    "firestore": {
+      "app": {
+        "_isDeleted": false,
+        "_options": {
+          "apiKey": "AIzaSyBUD-vPqKendOG-s-gG-oyYj7awxftoXCk",
+          "authDomain": "data-migration-73361.firebaseapp.com",
+          "projectId": "data-migration-73361",
+          "storageBucket": "data-migration-73361.appspot.com",
+          "messagingSenderId": "654375893511",
+          "appId": "1:654375893511:web:4d0fb3a45ba233efc288a2"
+        },
+        "_config": {
+          "name": "[DEFAULT]",
+          "automaticDataCollectionEnabled": false
+        },
+        "_name": "[DEFAULT]",
+        "_automaticDataCollectionEnabled": false,
+        "_container": {
+          "name": "[DEFAULT]",
+          "providers": {}
+        }
+      },
+      "databaseId": {
+        "projectId": "data-migration-73361",
+        "database": "(default)"
+      },
+      "settings": {
+        "host": "firestore.googleapis.com",
+        "ssl": true,
+        "ignoreUndefinedProperties": false,
+        "cacheSizeBytes": 41943040,
+        "experimentalForceLongPolling": false,
+        "experimentalAutoDetectLongPolling": false,
+        "useFetchStreams": true
+      }
+    }
+  },
+  "status": 200,
+  "statusText": "OK",
+  "headers": {
+    "connection": "keep-alive",
+    "content-length": "922",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Wed, 01 Mar 2023 09:38:54 GMT",
+    "etag": "\"xpb2vxn24npm\"",
+    "keep-alive": "timeout=5",
+    "vary": "Accept-Encoding"
+  },
+  "config": {
+    "transitional": {
+      "silentJSONParsing": true,
+      "forcedJSONParsing": true,
+      "clarifyTimeoutError": false
+    },
+    "adapter": ["xhr", "http"],
+    "transformRequest": [null],
+    "transformResponse": [null],
+    "timeout": 0,
+    "xsrfCookieName": "XSRF-TOKEN",
+    "xsrfHeaderName": "X-XSRF-TOKEN",
+    "maxContentLength": -1,
+    "maxBodyLength": -1,
+    "env": {},
+    "headers": {
+      "Accept": "application/json, text/plain, */*",
+      "Content-Type": "application/json"
+    },
+    "method": "post",
+    "url": "/api/request",
+    "data": "{\"UserName\":\"Santhosh.nct@gmail.com\",\"Platform\":\"Vtex\",\"Account\":\"Trika\",\"Parameter\":\"Get-All\",\"RequestInputs\":{\"1\":{\"RefId\":1,\"Payload\":{\"skuId\":\"63e22cfc6ab95220a80200cc\",\"SkuId\":1,\"SkuName\":10},\"ResponseCode\":0,\"ResponseData\":\"\",\"ResponseStatus\":\"\"},\"2\":{\"RefId\":2,\"Payload\":{\"skuId\":\"63e22cfc6ab95220a80200cc\",\"SkuId\":2,\"SkuName\":11},\"ResponseCode\":0,\"ResponseData\":\"\",\"ResponseStatus\":\"\"},\"3\":{\"RefId\":3,\"Payload\":{\"skuId\":\"63e22cfc6ab95220a80200cc\",\"SkuId\":3,\"SkuName\":12},\"ResponseCode\":0,\"ResponseData\":\"\",\"ResponseStatus\":\"\"},\"4\":{\"RefId\":4,\"Payload\":{\"skuId\":\"63e22cfc6ab95220a80200cc\",\"SkuId\":4,\"SkuName\":13},\"ResponseCode\":0,\"ResponseData\":\"\",\"ResponseStatus\":\"\"},\"5\":{\"RefId\":5,\"Payload\":{\"skuId\":\"63e22cfc6ab95220a80200cc\",\"SkuId\":5,\"SkuName\":14},\"ResponseCode\":0,\"ResponseData\":\"\",\"ResponseStatus\":\"\"},\"6\":{\"RefId\":6,\"Payload\":{\"skuId\":\"63e22cfc6ab95220a80200cc\",\"SkuId\":6,\"SkuName\":15},\"ResponseCode\":0,\"ResponseData\":\"\",\"ResponseStatus\":\"\"},\"7\":{\"RefId\":7,\"Payload\":{\"skuId\":\"63e22cfc6ab95220a80200cc\",\"SkuId\":7,\"SkuName\":16},\"ResponseCode\":0,\"ResponseData\":\"\",\"ResponseStatus\":\"\"},\"8\":{\"RefId\":8,\"Payload\":{\"skuId\":\"63e22cfc6ab95220a80200cc\",\"SkuId\":8,\"SkuName\":17},\"ResponseCode\":0,\"ResponseData\":\"\",\"ResponseStatus\":\"\"},\"9\":{\"RefId\":9,\"Payload\":{\"skuId\":\"63e22cfc6ab95220a80200cc\",\"SkuId\":9,\"SkuName\":18},\"ResponseCode\":0,\"ResponseData\":\"\",\"ResponseStatus\":\"\"},\"10\":{\"RefId\":10,\"Payload\":{\"skuId\":\"63e22cfc6ab95220a80200cc\",\"SkuId\":10,\"SkuName\":19},\"ResponseCode\":0,\"ResponseData\":\"\",\"ResponseStatus\":\"\"},\"11\":{\"RefId\":11,\"Payload\":{\"skuId\":\"63e22cfc6ab95220a80200cc\",\"SkuId\":11,\"SkuName\":20},\"ResponseCode\":0,\"ResponseData\":\"\",\"ResponseStatus\":\"\"}}}"
+  },
+  "request": {}
+}

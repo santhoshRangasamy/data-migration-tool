@@ -1,0 +1,31 @@
+.sidebar {
+  flex: 1;
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .logo {
+      height: 32px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+
+  hr {
+    height: 0;
+    border: 0.5px solid rgb(230, 227, 227);
+  }
+
+  .center {
+    margin-top: 10px;
+    padding-left: 10px;
+    font-weight: bold;
+  }
+
+  .bottom {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+  }
+}
