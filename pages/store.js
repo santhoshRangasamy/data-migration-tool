@@ -17,6 +17,8 @@ function reducer(state = initialState, action) {
       return { ...state, user: action.payload };
     case "userInput":
       return { ...state, userInput: action.payload };
+    case "documentId":
+      return { ...state, documentId: action.payload };
     default:
       return state;
   }

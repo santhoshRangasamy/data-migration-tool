@@ -32,3 +32,14 @@ export async function updaterequest(payload) {
       console.error(error);
     });
 }
+
+export async function updaterequestbyid(documentId) {
+  return await axios
+    .patch(`/api/updatebyid?documentId=${documentId}`)
+    .then((response) => {
+      return response;
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+}

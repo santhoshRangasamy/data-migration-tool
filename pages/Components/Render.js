@@ -9,7 +9,11 @@ import { getrequests, postrequest, updaterequest } from "./Datahandler";
 
 var XLSX = require("xlsx");
 const collectionName = "requests";
+
+
+
 const Render = () => {
+
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -31,16 +35,6 @@ const Render = () => {
   const [remainingData, setRemainingData] = useState("");
   const [progressPercentage, setProgressPercentage] = useState(0);
 
-  let td = {
-    DocumentId: "Gft3RW6PaTOsKmBp81e8",
-    Account: "Trika",
-    RefId: 1,
-    Parameter: "Get_Product_by_ID",
-    Payload: {
-      PrimaryId: 17,
-    },
-  };
-
   const handleFile = async (e) => {
     const file = e.target.files[0];
     const data = await file.arrayBuffer();
@@ -49,14 +43,19 @@ const Render = () => {
     const jsondata = XLSX.utils.sheet_to_json(worksheet);
     setRecords(jsondata.length);
 
-    let required = { ResponseCode: 0, ResponseData: "", ResponseStatus: "" };
+    let required = {
+      ResponseCode: 0,
+      ResponseData: "",
+    };
 
     let payload = {
       UserName: "Santhosh.nct@gmail.com",
       Platform: "Vtex",
       Account: "Trika",
-      Parameter: "Get-All",
+      Parameter: "Get_SKU",
       RequestInputs: {},
+      RenderStatus: "Pending",
+      RenderedIds: [],
     };
 
     for (let i = 0; i < jsondata.length; i++) {
@@ -65,7 +64,7 @@ const Render = () => {
       delete obj.Payload.RefId;
       payload.RequestInputs[jsondata[i].RefId] = obj;
     }
-
+    console.log(payload);
     await postrequest(payload).then((res) => {
       console.log(res);
     });
@@ -75,6 +74,7 @@ const Render = () => {
     });
     setRender(false);
   };
+
 
   return (
     <div className={styles.featured}>
@@ -90,6 +90,7 @@ const Render = () => {
           />
         </Button>
       </div>
+     
       <hr />
       <Table data={data}></Table>
     </div>

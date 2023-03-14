@@ -1,0 +1,34 @@
+{
+  "name": "Data-Migration",
+  "Trika": {
+    "title": "Settings",
+    "type": "object",
+    "properties": {
+      "appCredentials": {
+        "title": "VTEX App Key & Token",
+        "description": "All credentials are required",
+        "type": "object",
+        "properties": {
+          "appLink": {
+            "title": "VTEX App Link",
+            "description": "Enter the  Api Link",
+            "type": "string",
+            "default": "https://trika.vtexcommercestable.com.br"
+          },
+          "appKey": {
+            "title": "VTEX App Key",
+            "description": "Enter the app key",
+            "type": "string",
+            "default": "vtexappkey-trika-BQTPFR"
+          },
+          "appToken": {
+            "title": "VTEX App Token",
+            "description": "Enter the app token",
+            "type": "string",
+            "default": ""
+          }
+        }
+      }
+    }
+  }
+}
